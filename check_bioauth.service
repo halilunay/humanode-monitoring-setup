@@ -1,0 +1,8 @@
+[Unit]
+Description=Humanode Bioauth Monitoring Service
+
+[Service]
+ExecStart=/usr/bin/python3 /path/to/check_bioauth.py
+
+[Install]
+WantedBy=multi-user.target
