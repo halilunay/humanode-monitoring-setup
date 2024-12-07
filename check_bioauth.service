@@ -1,8 +1,13 @@
 [Unit]
-Description=Humanode Bioauth Monitoring Service
+Description=Bioauth Kontrol Scripti
+After=network.target
 
 [Service]
-ExecStart=/usr/bin/python3 /path/to/check_bioauth.py
+User=root
+WorkingDirectory=/root
+EnvironmentFile=/root/check_bioauth.env
+ExecStart=/usr/bin/python3 /root/check_bioauth.py
+Restart=always
 
 [Install]
 WantedBy=multi-user.target
