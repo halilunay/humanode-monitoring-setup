@@ -1,13 +1,1 @@
-[Unit]
-Description=Bioauth Kontrol Scripti
-After=network.target
-
-[Service]
-User=root
-WorkingDirectory=/root
-EnvironmentFile=/root/check_bioauth.env
-ExecStart=/usr/bin/python3 /root/check_bioauth.py
-Restart=always
-
-[Install]
-WantedBy=multi-user.target
+.
