@@ -4,7 +4,8 @@ set -e
 echo "[MAIN SETUP] Prometheus, Grafana kurulumu başlıyor..."
 
 # subnodes.env dosyasını yükle
-source /root/subnodes.env
+source /root/humanode-monitoring-setup/subnodes.env
+
 
 # ALT_NODES değişkenindeki IP adreslerini işleyelim
 # Virgülle ayrılmış listeyi YAML formatına dönüştürmek için bir döngü kullanalım
